@@ -42,8 +42,10 @@ static inline void sub_vectors(vector3d* dist, vector3d v1, vector3d v2){
           dest.x=v1.y*v2.z-v1.z*v2.y; \
           dest.y=v1.z*v2.x-v1.x*v2.z; \
           dest.z=v1.x*v2.y-v1.y*v2.x;*/
-static int_vector3d  cr_mask0 = {1, 2, 0, 3};
-static int_vector3d  cr_mask1 = {2, 0, 1, 3};
+//static int_vector3d  cr_mask0 = {1, 2, 0, 3};
+#define  cr_mask0 ((int_vector3d){1, 2, 0, 3})
+//static int_vector3d  cr_mask1 = {2, 0, 1, 3};
+#define  cr_mask1 ((int_vector3d){2, 0, 1, 3})
 static inline void cross_product(vector3d* dist, vector3d v1, vector3d v2){
     /*vector3d tmp0 = __builtin_shuffle (v1, cr_mask0); 
     vector3d tmp1 = __builtin_shuffle (v2, cr_mask1);
@@ -63,8 +65,10 @@ static inline void cross_product(vector3d* dist, vector3d v1, vector3d v2){
           dest.y=v1.z*v2.x-v1.x*v2.z; \
           */
 
-static int_vector3d  cr_mask0_am = {1, 2, 0, 3}; //another method
-static int_vector3d  cr_mask1_am = {1, 2, 0, 3}; //another method
+//static int_vector3d  cr_mask0_am = {1, 2, 0, 3}; //another method
+#define  cr_mask0_am ((int_vector3d){1, 2, 0, 3})
+//static int_vector3d  cr_mask1_am = {1, 2, 0, 3}; //another method
+#define  cr_mask1_am ((int_vector3d){1, 2, 0, 3})
 static inline void cross_product_am(vector3d* dist, vector3d v1, vector3d v2){ //another method, 3 shuffles instead of 4
     /*vector3d tmp0 = __builtin_shuffle (v1, cr_mask0_am); 
     vector3d tmp1 = __builtin_shuffle (v2, cr_mask0_am);

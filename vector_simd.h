@@ -1,6 +1,5 @@
 #ifndef __VECTOR_SIMD_H__
 #define __VECTOR_SIMD_H__
-//#include "global_defines.h"
 #include <math.h>
 #include <stdint.h>
 //#include "immintrin.h"
@@ -90,7 +89,6 @@ static inline void center_position_calc(vector3d* dist, vector3d v1, vector3d v2
 #define SUB_VECTORS(dist, v1, v2)(dist = v1 - v2)
 #define ADD_VECTORS(dist, v1, v2)(dist = v1 + v2)
 #define MULTIPLE_VECTOR(dist, v1, factor)(dist =  v1 * (vector3d){factor, factor, factor, factor})
-//void center_position_calc_f(location3d* loc1, location3d loc2);
 
 
 #endif

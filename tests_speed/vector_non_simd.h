@@ -15,6 +15,4 @@ typedef struct {
           dest.x=v1.y*v2.z-v1.z*v2.y; \
           dest.y=v1.z*v2.x-v1.x*v2.z; \
           dest.z=v1.x*v2.y-v1.y*v2.x;
-
-//void center_position_calc_f(location3d* loc1, location3d loc2);
 #endif

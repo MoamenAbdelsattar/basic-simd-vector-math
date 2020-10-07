@@ -1,0 +1,87 @@
+==================== run #1 ====================
+start time simd is 0
+end time simd is 82
+time consumed is 82
+
+
+
+start time another method simd is 83
+end time simd another method is 159
+time consumed is 76
+
+
+
+start time non-simd is 159
+end time non-simd is 312
+time consumed is 153
+==================== run #1 ====================
+==================== run #2 ====================
+tart time simd is 0
+end time simd is 82
+time consumed is 82
+
+
+
+start time another method simd is 82
+end time simd another method is 207
+time consumed is 125
+
+
+
+start time non-simd is 207
+end time non-simd is 345
+time consumed is 138
+==================== run #2 ====================
+==================== run #3 ====================
+start time simd is 0
+end time simd is 90
+time consumed is 90
+
+
+
+start time another method simd is 91
+end time simd another method is 185
+time consumed is 94
+
+
+
+start time non-simd is 186
+end time non-simd is 305
+time consumed is 119
+==================== run #3 ====================
+==================== run #4 ====================
+start time simd is 0
+end time simd is 95
+time consumed is 95
+
+
+
+start time another method simd is 96
+end time simd another method is 172
+time consumed is 76
+
+
+
+start time non-simd is 172
+end time non-simd is 300
+time consumed is 128
+==================== run #4 ====================
+==================== run #5 ====================
+start time simd is 0
+end time simd is 84
+time consumed is 84
+
+
+
+start time another method simd is 84
+end time simd another method is 163
+time consumed is 79
+
+
+
+start time non-simd is 164
+end time non-simd is 286
+time consumed is 122
+==================== run #5 ====================
+
+Conclusion: Sometimes the first method is faster than the second method, which I can't explain. However, the simd methods are always faster than non-simd methods.

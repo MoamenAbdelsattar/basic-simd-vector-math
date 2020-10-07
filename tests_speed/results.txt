@@ -1,3 +1,5 @@
+Windows 10
+Inter(R) Core(TM) i7-7500U CPU @ 2.70GHz   2.90GHz
 ==================== run #1 ====================
 start time simd is 0
 end time simd is 82

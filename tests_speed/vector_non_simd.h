@@ -9,7 +9,7 @@ E-mail: moemen0101@gmail.com
 #define VECTOR_H
 #include <math.h>
 typedef struct {
-	double x,y,z;
+	float x,y,z;
 } vector3d_nonSimd;
 #define cross_product_nonSimd(dest,v1,v2) \
           dest.x=v1.y*v2.z-v1.z*v2.y; \
